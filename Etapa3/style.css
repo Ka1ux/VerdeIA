@@ -1,0 +1,190 @@
+/* =========================
+   Design System VerdeIA
+========================= */
+:root {
+    --color-primary: #2E8B57;
+    --color-secondary: #3CB371;
+    --color-accent: #90EE90;
+    --color-neutral-100: #FFFFFF;
+    --color-neutral-200: #F4F4F4;
+    --color-neutral-300: #CCCCCC;
+    --color-neutral-400: #333333;
+
+    --font-size-xl: 32px;
+    --font-size-lg: 24px;
+    --font-size-md: 18px;
+    --font-size-sm: 14px;
+
+    --space-8: 8px;
+    --space-16: 16px;
+    --space-24: 24px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    color: var(--color-neutral-400);
+    background-color: var(--color-neutral-200);
+}
+
+/* Header */
+header {
+    background-color: var(--color-primary);
+    padding: var(--space-16) var(--space-24);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo { height: 60px; }
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu a {
+    color: var(--color-neutral-100);
+    text-decoration: none;
+    padding: var(--space-8) var(--space-16);
+    font-weight: bold;
+}
+
+.menu a:hover { color: var(--color-accent); }
+
+/* Main Grid */
+.main-grid { 
+    max-width: 1200px; 
+    margin: 40px auto; 
+    display: grid; 
+    gap: var(--space-24); 
+}
+
+/* Cards */
+.card { 
+    background-color: var(--color-neutral-100); 
+    padding: var(--space-24); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Cards de Projetos */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-16);
+}
+
+.project-card {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral-100);
+    padding: var(--space-16);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 1; /* sempre visível */
+    transform: translateY(0);
+}
+
+/* Botões */
+.button {
+    padding: var(--space-8) var(--space-16);
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover { 
+    background-color: var(--color-accent); 
+    color: #333; 
+}
+
+/* Formulário */
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: var(--space-24);
+    background-color: var(--color-neutral-100);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 { 
+    text-align: center; 
+    color: var(--color-primary); 
+    margin-bottom: var(--space-24); 
+}
+
+fieldset {
+    border: 2px solid var(--color-secondary);
+    border-radius: 12px;
+    padding: var(--space-16);
+    margin-bottom: var(--space-24);
+}
+
+legend { font-weight: bold; padding: 0 8px; }
+
+input, select, textarea {
+    width: 100%;
+    padding: var(--space-8);
+    margin-bottom: var(--space-16);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: 6px;
+}
+
+input:valid { border-color: green; }
+input:invalid { border-color: black; }
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-secondary);
+    color: var(--color-neutral-100);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover { background-color: var(--color-primary); }
+
+/* Alertas */
+.alert {
+    display: none;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: var(--space-16);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.alert-success { background-color: var(--color-secondary); color: var(--color-neutral-100); }
+.alert-error { background-color: black; color: var(--color-neutral-100); }
+
+/* Tabela info */
+.info table { width: 100%; margin-top: var(--space-16); border-collapse: collapse; }
+.info td { padding: var(--space-8); border-bottom: 1px solid #CCC; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: var(--space-16);
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+}

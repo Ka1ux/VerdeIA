@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro VerdeIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="Logo.png" alt="VerdeIA Logo" class="logo">
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Projetos.html">Nossos Projetos</a></li>
+                <li><a href="Cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <form id="cadastro-form">
+        <h1>Formulário de Cadastro</h1>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+            <input type="date" name="nascimento" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <input type="text" name="endereco" placeholder="Rua, número, complemento" required>
+            <input type="text" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required>
+            <input type="text" name="cidade" placeholder="Cidade" required>
+            <select name="estado" required>
+                <option value="">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="BA">Bahia</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Feedback -->
+    <div id="feedback" class="alert"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

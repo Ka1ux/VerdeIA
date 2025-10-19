@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>VerdeIA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Cards inicialmente escondidos */
+        .project-card {
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        /* Cards visíveis ao passar o mouse na seção de projetos */
+        .projetos.hover .project-card {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="Logo.png" alt="VerdeIA Logo" class="logo">
+
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="has-dropdown">
+                    <a href="Projetos.html">Nossos Projetos</a>
+                </li>
+                <li><a href="Cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main-grid">
+
+    <section class="intro card full">
+        <h1>VerdeIA — Inteligência Artificial a serviço do planeta</h1>
+        <p>
+            Vivemos em um momento em que o meio ambiente precisa de ações rápidas, inteligentes e sustentáveis.
+            A VerdeIA nasceu com um propósito claro: usar a tecnologia e a inteligência artificial para proteger o planeta e promover um futuro mais verde para todos.
+            Unimos ciência, inovação e consciência ambiental para monitorar ecossistemas, reduzir impactos e incentivar comunidades a agir de forma sustentável.
+            Com dados, aprendizado de máquina e empatia, queremos mostrar que a tecnologia pode e deve trabalhar ao lado da natureza.
+        </p>
+    </section>
+
+    <section class="contato card full">
+        <h4>📩 Entre em Contato</h4>
+        <form>
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Mensagem" rows="4" required></textarea>
+            <button class="button" type="submit">Enviar</button>
+        </form>
+        <div class="alert alert-success">Mensagem enviada com sucesso!</div>
+        <div class="alert alert-error">Erro ao enviar mensagem.</div>
+    </section>
+
+</main>
+
+<footer>
+    <p>💬 Cada mensagem é uma nova semente que pode mudar o mundo.</p>
+</footer>
+
+<script>
+    // 1. Menu hambúrguer mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.querySelector('.menu ul');
+
+    menuToggle.addEventListener('change', () => {
+        if(menuToggle.checked){
+            menu.style.display = 'flex';
+            menu.style.flexDirection = 'column';
+        } else {
+            menu.style.display = '';
+        }
+    });
+
+    // 2. Hover na seção de projetos para mostrar cards
+    const projetosSection = document.querySelector('.projetos');
+    projetosSection.addEventListener('mouseenter', () => {
+        projetosSection.classList.add('hover');
+    });
+    projetosSection.addEventListener('mouseleave', () => {
+        projetosSection.classList.remove('hover');
+    });
+</script>
+
+</body>
+</html>
