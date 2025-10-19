@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Cadastro</title>
+    </head>
+    <body>
+        
+        <table align="center">
+        <tr>
+            <td> <img src="C:\Users\kalux\OneDrive\Área de Trabalho\Site2\Logo.png" width="100"></td>
+            <td align="left">
+            <a href="index.html"><strong> Início </strong></a>
+            <a href="Projetos.html"><Strong> Nossos Projetos</Strong></a>
+            <a href="Cadastro.html"><Strong> Cadastro</Strong></a>
+            </td>
+        </tr>
+        </table>
+
+    <form action="#" method="post">
+
+        <h1>Formulário de Cadastro</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Seção 1 — Dados Pessoais</legend>
+
+            Nome completo:<br>
+            <input type="text" name="nome" placeholder="Digite seu nome completo" required><br><br>
+
+            E-mail:<br>
+            <input type="email" name="email" placeholder="exemplo@email.com" required><br><br>
+
+            CPF:<br>
+            <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required><br><br>
+
+            Telefone:<br>
+            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required><br><br>
+
+            Data de nascimento:<br>
+            <input type="date" name="nascimento" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Seção 2 — Endereço</legend>
+
+            Endereço (rua, número, complemento):<br>
+            <input type="text" name="endereco" placeholder="Rua Exemplo, 123 - Apto 4" required><br><br>
+
+            CEP:<br>
+            <input type="text" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required><br><br>
+
+            Cidade:<br>
+            <input type="text" name="cidade" placeholder="Digite sua cidade" required><br><br>
+
+            Estado:<br>
+            <select name="estado" required>
+                <option value="">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="BA">Bahia</option>
+            </select><br><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    </body>
+
+</html>
