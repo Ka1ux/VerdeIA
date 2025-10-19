@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>VerdeIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header>
+    <div class="header-container">
+        <img src="Logo.png" alt="VerdeIA Logo" class="logo">
+
+        <!-- Checkbox para menu mobile -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menu principal -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="has-dropdown">
+                    <a href="Projetos.html">Nossos Projetos</a>
+                </li>
+                <li><a href="Cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ========================= CONTEÚDO PRINCIPAL ========================= -->
+<main class="main-grid">
+
+    <!-- Introdução -->
+    <section class="intro card full">
+        <h1>VerdeIA — Inteligência Artificial a serviço do planeta</h1>
+        <p>
+            Vivemos em um momento em que o meio ambiente precisa de ações rápidas, inteligentes e sustentáveis.
+            A VerdeIA nasceu com um propósito claro: usar a tecnologia e a inteligência artificial para proteger o planeta e promover um futuro mais verde para todos.
+            Unimos ciência, inovação e consciência ambiental para monitorar ecossistemas, reduzir impactos e incentivar comunidades a agir de forma sustentável.
+            Com dados, aprendizado de máquina e empatia, queremos mostrar que a tecnologia pode e deve trabalhar ao lado da natureza.
+        </p>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projetos card full">
+        <h4>🌱 Projetos em Destaque</h4>
+        <div class="card-grid">
+            <div class="project-card">
+                <h5>Projeto 1</h5>
+                <p>Descrição breve do projeto 1.</p>
+                <span class="badge green">IA</span>
+                <span class="badge light">Sustentável</span>
+                <button class="button">Saiba mais</button>
+            </div>
+            <div class="project-card">
+                <h5>Projeto 2</h5>
+                <p>Descrição breve do projeto 2.</p>
+                <span class="badge green">IA</span>
+                <span class="badge light">Comunidade</span>
+                <button class="button">Saiba mais</button>
+            </div>
+            <div class="project-card">
+                <h5>Projeto 3</h5>
+                <p>Descrição breve do projeto 3.</p>
+                <span class="badge green">Sustentável</span>
+                <span class="badge light">Educação</span>
+                <button class="button">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato card full">
+        <h4>📩 Entre em Contato</h4>
+        <p>
+            Quer apoiar nossa causa, fazer parceria ou saber mais sobre nossos projetos com IA e sustentabilidade?
+            Entre em contato com a VerdeIA — ficaremos felizes em conversar e construir juntos um futuro mais verde e inteligente. 🌱
+        </p>
+
+        <form>
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Mensagem" rows="4" required></textarea>
+            <button class="button" type="submit">Enviar</button>
+        </form>
+
+        <div class="alert alert-success">Mensagem enviada com sucesso!</div>
+        <div class="alert alert-error">Erro ao enviar mensagem.</div>
+    </section>
+
+</main>
+
+<!-- ========================= FOOTER ========================= -->
+<footer>
+    <p>💬 Cada mensagem é uma nova semente que pode mudar o mundo.</p>
+</footer>
+
+</body>
+</html>
