@@ -12,8 +12,6 @@ form.addEventListener('submit', function(e) {
         feedback.textContent = "❌ Preencha todos os campos corretamente!";
         feedback.className = "alert alert-error";
     }
+
     feedback.style.display = "block";
-
-
-};
-
+});
