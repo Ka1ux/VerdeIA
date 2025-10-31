@@ -63,13 +63,6 @@ Plantio de árvores em áreas urbanas com mapeamento inteligente usando IA.
 - **Instagram:** [@verdeia](https://instagram.com)
 - **E-mail:** contato@verdeia.com
 
-## 📝 Requisitos Acadêmicos Atendidos
-
-- ✅ Versionamento profissional (Git)
-- ✅ Acessibilidade WCAG 2.1 AA
-- ✅ Deploy em produção
-- ✅ 100% autoral
-- ✅ HTML, CSS e JavaScript puro
 
 ## 👨‍💻 Autor
 
