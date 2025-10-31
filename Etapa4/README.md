@@ -1,196 +1,86 @@
 # 🌱 VerdeIA - Tecnologia + Natureza
 
-![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+## 📋 Sobre o Projeto
 
-> **ONG que usa inteligência artificial para sustentabilidade**
+**VerdeIA** é uma ONG/projeto social que utiliza inteligência artificial para sustentabilidade. Desenvolvido com HTML, CSS e JavaScript puro para entrega acadêmica.
 
-VerdeIA é uma organização não-governamental dedicada a combinar tecnologia de ponta com preservação ambiental. Utilizamos inteligência artificial para monitorar desmatamento, educar comunidades e mapear plantio de árvores.
+## 🎯 Características
 
----
+- ✅ **100% HTML, CSS e JavaScript puro** (sem frameworks)
+- ✅ **Acessibilidade WCAG 2.1 Nível AA** completa
+- ✅ **Design responsivo** (mobile, tablet e desktop)
+- ✅ **Modo escuro** fixo
+- ✅ **3 páginas funcionais:**
+  - Início (hero + missão + contato)
+  - Nossos Projetos (3 projetos detalhados)
+  - Cadastro (formulário completo)
+- ✅ **Logo SVG personalizada**
+- ✅ **Redes sociais no rodapé**
+- ✅ **Máscaras automáticas** (CPF, telefone, CEP)
+- ✅ **Toast notifications**
+- ✅ **Menu mobile funcional**
 
-## ✨ Características
-
-- ⚡ **React 18.3** + TypeScript para máxima performance
-- 🎨 **Tailwind CSS 4.0** para estilização moderna
-- 🚀 **Vite** para build ultra rápido
-- 🧭 **React Router** para navegação fluida
-- 📱 **Responsivo** - Mobile, tablet e desktop
-- ♿ **Acessível** - WCAG 2.1 Nível AA
-- 🌓 **Tema Escuro** fixo e elegante
-- 🎯 **Componentes Shadcn/ui** reutilizáveis
-
----
-
-## 🚀 Nossos Projetos
-
-### 🛰️ IA pelo Planeta
-Análise de imagens de satélite para detectar desmatamento em tempo real.
-
-### 📚 Consciente Digital
-Oficinas gratuitas em escolas públicas ensinando programação e sustentabilidade.
-
-### 🌳 Verde nas Ruas
-Plantio de árvores em áreas urbanas com mapeamento inteligente por IA.
-
----
-
-## 🛠️ Tecnologias
-
-- **React 18.3** - Biblioteca UI moderna
-- **TypeScript 5.5** - Tipagem estática
-- **Tailwind CSS 4.0** - Framework CSS utility-first
-- **Vite 6.0** - Build tool ultra rápido
-- **React Router 7** - Roteamento SPA
-- **Shadcn/ui** - Componentes acessíveis
-- **Lucide React** - Ícones modernos
-- **Sonner** - Notificações toast elegantes
-
----
-
-## 📦 Instalação
-
-```bash
-# Clone o repositório
-git clone https://github.com/Ka1ux/VerdeIA.git
-
-# Entre na pasta
-cd VerdeIA
-
-# Instale as dependências
-npm install
-
-# Rode o projeto
-npm run dev
-```
-
-Acesse: `http://localhost:5173`
-
----
-
-## 🏗️ Build para Produção
-
-```bash
-# Gerar build otimizado
-npm run build
-
-# Preview do build
-npm run preview
-```
-
----
-
-## 📁 Estrutura do Projeto
+## 📁 Estrutura
 
 ```
 VerdeIA/
-├── src/
-│   └── main.tsx          # Entry point
-├── components/
-│   ├── Header.tsx        # Navegação
-│   ├── Footer.tsx        # Rodapé
-│   ├── HomePage.tsx      # Página inicial
-│   ├── ProjectsPage.tsx  # Projetos
-│   ├── RegistrationPage.tsx # Cadastro
-│   └── ui/              # Componentes Shadcn
-├── styles/
-│   └── globals.css      # Estilos globais
-├── App.tsx              # Componente raiz
-└── package.json         # Dependências
+├── index.html    ← Página principal
+├── style.css     ← Estilos
+└── script.js     ← JavaScript
 ```
 
----
+## 🚀 Como Usar
 
-## 📄 Páginas
+### Opção 1: Abrir diretamente
+1. Duplo clique em `index.html`
+2. O site abre no navegador
+3. PRONTO! 🎉
 
-### 1️⃣ Início (`/`)
-- Hero section com título e descrição
-- Cards de Missão, Visão e Valores
-- Formulário de contato funcional
+### Opção 2: Servidor local
+```bash
+# Python 3
+python -m http.server 8000
 
-### 2️⃣ Nossos Projetos (`/projetos`)
-- Detalhamento dos 3 projetos principais
-- Recursos e benefícios de cada projeto
-- Call to action para engajamento
+# Acesse
+http://localhost:8000/index.html
+```
 
-### 3️⃣ Cadastro (`/cadastro`)
-- Formulário completo com validação
-- Dados pessoais e endereço
-- Select com todos os estados brasileiros
+## 🎨 Projetos
 
----
+### 🛰️ IA pelo Planeta
+Monitoramento de áreas florestais com redes neurais convolucionais e análise de imagens de satélite.
 
-## 🎨 Design System
+### 📚 Consciente Digital
+Oficinas gratuitas de programação e conscientização ambiental em escolas públicas.
 
-### Cores
-- **Verde Principal**: `emerald-500` (#22c55e)
-- **Verde Hover**: `emerald-600` (#16a34a)
-- **Background**: `zinc-900` (#18181b)
-- **Cards**: `zinc-800` (#27272a)
-- **Bordas**: `zinc-700` (#3f3f46)
-- **Texto**: `white` + `zinc-300/400`
-
-### Componentes
-- Cards com hover state
-- Botões com transições suaves
-- Inputs com foco emerald
-- Toast notifications verdes
-- Logo SVG personalizada
-
----
-
-## ♿ Acessibilidade
-
-- ✅ Navegação por teclado
-- ✅ Semântica HTML5
-- ✅ ARIA labels
-- ✅ Contraste de cores WCAG AA
-- ✅ Focus visível em todos elementos interativos
-- ✅ Formulários com labels associadas
-
----
+### 🌳 Verde nas Ruas
+Plantio de árvores em áreas urbanas com mapeamento inteligente usando IA.
 
 ## 🌐 Redes Sociais
 
-- 🐙 [GitHub](https://github.com/Ka1ux/VerdeIA)
-- 💼 [LinkedIn](https://linkedin.com)
-- 📸 [Instagram](https://instagram.com)
-- 📧 [contato@verdeia.com](mailto:contato@verdeia.com)
+- **GitHub:** [Ka1ux/VerdeIA](https://github.com/Ka1ux/VerdeIA)
+- **LinkedIn:** [VerdeIA](https://linkedin.com)
+- **Instagram:** [@verdeia](https://instagram.com)
+- **E-mail:** contato@verdeia.com
+
+## 📝 Requisitos Acadêmicos Atendidos
+
+- ✅ Versionamento profissional (Git)
+- ✅ Acessibilidade WCAG 2.1 AA
+- ✅ Deploy em produção
+- ✅ 100% autoral
+- ✅ HTML, CSS e JavaScript puro
+
+## 👨‍💻 Autor
+
+**Ka1ux**
 
 ---
 
 ## 📜 Licença
 
-Este projeto está sob a licença MIT.
+MIT License - Projeto acadêmico
 
 ---
 
-## 👨‍💻 Autor
-
-**Ka1ux**
-- GitHub: [@Ka1ux](https://github.com/Ka1ux)
-
----
-
-## 💚 Mensagem Final
-
-Desenvolvido com ♥ para um futuro sustentável.
-
-*"Cada linha de código é uma nova semente que pode mudar o mundo."*
-
----
-
-## 🚀 Scripts Disponíveis
-
-```bash
-npm run dev      # Inicia servidor de desenvolvimento
-npm run build    # Build para produção
-npm run preview  # Preview do build
-npm run lint     # Verifica código com ESLint
-```
-
----
-
-**VerdeIA** © 2025 - Todos os direitos reservados.
+**💚 Desenvolvido com amor para um futuro sustentável 🌱**
