@@ -1,15 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VerdeIA - ONG que usa inteligência artificial para sustentabilidade">
+    <meta name="keywords" content="sustentabilidade, inteligência artificial, ONG, meio ambiente">
+    <meta name="author" content="Ka1ux">
+    <title>VerdeIA - Tecnologia + Natureza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <svg class="logo-svg" viewBox="0 0 200 60" aria-label="VerdeIA">
+                        <path d="M25 10 Q30 5, 35 10 L42 30 Q43 35, 40 38 L35 45 Q32 48, 28 45 L20 35 Q18 30, 20 25 Z" fill="#22c55e"/>
+                        <path d="M28 15 L28 42 M28 22 L23 27 M28 28 L33 33 M28 35 L24 39" stroke="#86efac" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        <circle cx="28" cy="15" r="2" fill="#4ade80"/>
+                        <circle cx="23" cy="27" r="2" fill="#4ade80"/>
+                        <circle cx="33" cy="33" r="2" fill="#4ade80"/>
+                        <circle cx="28" cy="42" r="2" fill="#4ade80"/>
+                        <path d="M28 45 Q26 50, 28 55" stroke="#16a34a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <text x="55" y="38" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#22c55e">Verde</text>
+                        <text x="122" y="38" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">IA</text>
+                        <text x="55" y="50" font-family="system-ui, sans-serif" font-size="8" font-weight="400" fill="#a1a1aa" letter-spacing="0.5">TECNOLOGIA + NATUREZA</text>
+                    </svg>
+                </a>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Integrar Projeto GitHub</title>
-    </head>
+                <div class="nav-desktop">
+                    <a href="#home" class="nav-link active" data-page="home">Início</a>
+                    <a href="#projetos" class="nav-link" data-page="projetos">Nossos Projetos</a>
+                    <a href="#cadastro" class="nav-link" data-page="cadastro">Cadastro</a>
+                </div>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu de navegação" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+
+            <div class="nav-mobile" id="navMobile">
+                <a href="#home" class="nav-link-mobile" data-page="home">Início</a>
+                <a href="#projetos" class="nav-link-mobile" data-page="projetos">Nossos Projetos</a>
+                <a href="#cadastro" class="nav-link-mobile" data-page="cadastro">Cadastro</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="hero">
+                <div class="container">
+                    <h1 class="hero-title">🌱 Bem-vindo ao VerdeIA</h1>
+                    <p class="hero-subtitle">Tecnologia + Natureza = Futuro Sustentável</p>
+                    <p class="hero-text">Somos uma ONG dedicada a combinar inteligência artificial com preservação ambiental.</p>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Nossa Missão</h2>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="card-icon">🎯</div>
+                            <h3 class="card-title">Missão</h3>
+                            <p class="card-text">Utilizar inteligência artificial para monitorar, proteger e restaurar o meio ambiente.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">👁️</div>
+                            <h3 class="card-title">Visão</h3>
+                            <p class="card-text">Ser referência global em soluções tecnológicas para sustentabilidade.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">💚</div>
+                            <h3 class="card-title">Valores</h3>
+                            <p class="card-text">Inovação, sustentabilidade, educação e transparência.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container-small">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <div class="form-card">
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">👤 Nome *</label>
+                                <input type="text" id="contactName" class="form-input" placeholder="Seu nome completo" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">📧 E-mail *</label>
+                                <input type="email" id="contactEmail" class="form-input" placeholder="seuemail@exemplo.com" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage" class="form-label">💬 Mensagem *</label>
+                                <textarea id="contactMessage" class="form-textarea" placeholder="Digite sua mensagem..." rows="5" required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projetos" class="page">
+            <div class="hero">
+                <div class="container">
+                    <h1 class="hero-title">🚀 Nossos Projetos</h1>
+                    <p class="hero-text">Conheça nossas iniciativas que combinam inteligência artificial com sustentabilidade.</p>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="container-medium">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🛰️</div>
+                            <h2 class="project-title">IA pelo Planeta</h2>
+                        </div>
+                        <p class="project-text">Utilizamos redes neurais convolucionais para analisar imagens de satélite em tempo real, detectando áreas de desmatamento.</p>
+                        <div class="features-box">
+                            <div class="feature-item">✓ Monitoramento em tempo real de áreas florestais</div>
+                            <div class="feature-item">✓ Alertas automáticos para desmatamento ilegal</div>
+                            <div class="feature-item">✓ Parceria com órgãos ambientais governamentais</div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">📚</div>
+                            <h2 class="project-title">Consciente Digital</h2>
+                        </div>
+                        <p class="project-text">Oferecemos oficinas gratuitas em escolas públicas, ensinando programação e conscientização ambiental.</p>
+                        <div class="features-box">
+                            <div class="feature-item">✓ Workshops de programação para jovens</div>
+                            <div class="feature-item">✓ Educação ambiental através da tecnologia</div>
+                            <div class="feature-item">✓ Material didático gratuito e acessível</div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🌳</div>
+                            <h2 class="project-title">Verde nas Ruas</h2>
+                        </div>
+                        <p class="project-text">Promovemos o plantio de árvores em áreas urbanas usando IA para mapear os melhores locais.</p>
+                        <div class="features-box">
+                            <div class="feature-item">✓ Análise inteligente de locais para plantio</div>
+                            <div class="feature-item">✓ Monitoramento do crescimento das árvores</div>
+                            <div class="feature-item">✓ Engajamento comunitário e voluntariado</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Seja Parte da Mudança</h2>
+                    <div class="cards-grid">
+                        <div class="card text-center">
+                            <div class="card-icon">🤝</div>
+                            <h3 class="card-title">Voluntariado</h3>
+                            <p class="card-text">Contribua com seu tempo e habilidades.</p>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-icon">💰</div>
+                            <h3 class="card-title">Doações</h3>
+                            <p class="card-text">Ajude a expandir nossos projetos.</p>
+                        </div>
+                        <div class="card text-center">
+                            <div class="card-icon">🤝</div>
+                            <h3 class="card-title">Parcerias</h3>
+                            <p class="card-text">Amplie o impacto positivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Registration Page -->
+        <div id="cadastro" class="page">
+            <div class="hero">
+                <div class="container">
+                    <h1 class="hero-title">📝 Cadastro</h1>
+                    <p class="hero-text">Preencha o formulário abaixo para se cadastrar em nossos projetos.</p>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="container-medium">
+                    <div class="form-card">
+                        <form id="registrationForm" class="form">
+                            <h3 class="form-section-title">Dados Pessoais</h3>
+                            
+                            <div class="form-group">
+                                <label for="regName" class="form-label">Nome Completo *</label>
+                                <input type="text" id="regName" class="form-input" placeholder="Seu nome completo" required aria-required="true">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="regEmail" class="form-label">E-mail *</label>
+                                    <input type="email" id="regEmail" class="form-input" placeholder="seuemail@exemplo.com" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="regPhone" class="form-label">Telefone *</label>
+                                    <input type="tel" id="regPhone" class="form-input" placeholder="(00) 00000-0000" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regCPF" class="form-label">CPF *</label>
+                                <input type="text" id="regCPF" class="form-input" placeholder="000.000.000-00" maxlength="14" required aria-required="true">
+                            </div>
+
+                            <h3 class="form-section-title">Endereço</h3>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="regCEP" class="form-label">CEP *</label>
+                                    <input type="text" id="regCEP" class="form-input" placeholder="00000-000" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="regState" class="form-label">Estado *</label>
+                                    <select id="regState" class="form-input" required aria-required="true">
+                                        <option value="">Selecione</option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regCity" class="form-label">Cidade *</label>
+                                <input type="text" id="regCity" class="form-input" placeholder="Sua cidade" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="regStreet" class="form-label">Rua *</label>
+                                <input type="text" id="regStreet" class="form-input" placeholder="Nome da rua" required aria-required="true">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="regNumber" class="form-label">Número *</label>
+                                    <input type="text" id="regNumber" class="form-input" placeholder="123" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="regComplement" class="form-label">Complemento</label>
+                                    <input type="text" id="regComplement" class="form-input" placeholder="Apto, bloco... (opcional)">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="footer-title">Conecte-se conosco</h3>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Ka1ux/VerdeIA" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:contato@verdeia.com" class="social-link" aria-label="E-mail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <p class="footer-text">💬 Cada mensagem é uma nova semente que pode mudar o mundo.</p>
+                <p class="footer-copy">&copy; <span id="currentYear"></span> VerdeIA. Desenvolvido com <span class="heart">♥</span> para um futuro sustentável.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
